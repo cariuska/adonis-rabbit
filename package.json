@@ -16,10 +16,9 @@
     "build/standalone.d.ts"
   ],
   "scripts": {
-    "build": "npm run copyfiles && tsc",
-    "copyfiles": "copyfiles \"templates/**/*.txt\" build",
-    "lint": "eslint . --ext=.ts --fix",
-    "test": "node --import=./tsnode.esm.js --enable-source-maps bin/test.ts"
+    "copy:templates": "copyfiles \"templates/**/*.txt\" build",
+    "build": "tsc",
+    "postbuild": "npm run copy:templates"
   },
   "devDependencies": {
     "@adonisjs/core": "^5.1.8",
