@@ -6,9 +6,9 @@
     "node_modules",
     "build"
   ],
-  "extends": "./node_modules/adonis-preset-ts/tsconfig",
+  "extends": "@adonisjs/tsconfig/tsconfig.package.json",
   "compilerOptions": {
-    "outDir": "build",
+    "outDir": "./build",
     "rootDir": "./",
     "sourceMap": true,
     "declaration": true,

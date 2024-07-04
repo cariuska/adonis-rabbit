@@ -70,11 +70,5 @@
   "eslintConfig": {
     "extends": "@adonisjs/eslint-config/package"
   },
-  "prettier": "@adonisjs/prettier-config",
-
-  "extends": "@adonisjs/tsconfig/tsconfig.package.json",
-  "compilerOptions": {
-    "rootDir": "./",
-    "outDir": "./build"
-  }
+  "prettier": "@adonisjs/prettier-config"
 }
